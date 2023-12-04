@@ -12,7 +12,10 @@ fun main(args: Array<String>) {
         return
     }
     // 内部资源版本号
-    val ver = args[0]
+    var ver = args[0]
+    if (ver == "0") {
+        ver = "6.6.6-b205"
+    }
     val folder = args[1]
     // 要处理的目录
     val fDir = File(folder)
